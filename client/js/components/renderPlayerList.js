@@ -11,13 +11,13 @@ function renderPlayerList (room, name, players) {
 
   $list.innerHTML = ''
 
-  const $room = document.createElement('h3')
-  $room.innerHTML = room + ' - ' + name
+  const $room = document.createElement('div')
+  $room.innerHTML = `<span id="roomName">Room Name<b>${room}</b></span><span id="playerName">Player Name<b>${name}</b></span><br><h3>Player List</h3>`
 
   $list.appendChild($room)
 
   players.forEach((player) => {
-    const $playerDiv = document.createElement('div')
+    const $playerDiv = document.createElement('span')
     $playerDiv.innerHTML = player
     $list.appendChild($playerDiv)
   })

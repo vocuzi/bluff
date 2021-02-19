@@ -11,9 +11,11 @@ function renderCurrentRoundInfo (centralStackSize, centralStackLast, rank, histo
 
   $roundInfo.innerHTML = ''
 
-  $roundInfo.innerHTML = `Central Stack: ${centralStackSize} (${centralStackLast})<br>
-                            rank: ${rank || 'first turn'}<br>
-                            turn: ${turn}`
+  $roundInfo.innerHTML = `<div id="information-badges">
+    <span id="centralStackInfo">Cards on Table :<b>${centralStackSize} (${centralStackLast})</b></span>
+    <span id="rankInfo">Rank :<b>${rank || 'first turn'}</b></span>
+    <span id="turnInfo">Turn :<b>${turn}</b></span>
+  </div><br>`
 
   history.forEach((event, index) => {
     const $eventDiv = document.createElement('div')

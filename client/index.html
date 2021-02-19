@@ -16,28 +16,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bluff Card Game - Online</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="bluff.css">
-    <title>Bluff</title>
 </head>
 <body>
     <header>
-        <h1>Bluff</h1>
+        <h1>Bluff Card Game - Online</h1>
     </header>
     <main id = "root">
         <div id="registration">Choose your username and room name <br> 
             Ensure you enter same room name as the person you are playing with.
-
+            <hr>
             <form id="registration-form">
                 <p>Username:</p>
                 <input id="username" type="text" placeholder="Enter username" name="username" required="true">
                 <p>Room name:</p>
-                <input id="room" type="text" placeholder="Enter rom name" name="room" required="true">
+                <input id="room" type="text" placeholder="Enter room name" name="room" required="true">
                 <button id="formSubmit" type="submit">Play!</button>
             </form>
         </div>
         <div id="cardModal" class="modal">
             <div class="modal-content">
-                <h2>'Which rank card have you added?(You may BLUFF)'</h2>
+                <h2>Which rank card have you added?</h2>
                 <select name="selectCard" id="selectCard">
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -58,7 +60,7 @@
         </div>
     </main>
     <footer>
-        <h4>An Open Source Project by BITS ACM</h4>
+        <h4></h4>
     </footer>
 </body>
 </div>
